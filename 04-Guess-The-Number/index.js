@@ -9,7 +9,6 @@ let number = Math.ceil(Math.random() * 100)
 let guesses = []
 document.getElementById('form').addEventListener('submit', (e) => {
   e.preventDefault()
-  debugger
   if (Number(remGuesses.innerText) === 0) {
     showMessage('You are out of tries', 'yellow', 'Start over')
   } else {

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+}
+
+input {
+    font-size: 18px;
+    padding: 8px 6px;
+    width: 100%;
+}
+
+#num {
+    width: 96.7%;
+}
+
+.opeartiveBtns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 5px 20px;
+    font-size: 30px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}

@@ -32,11 +32,6 @@ let users = [
 ]
 
 
-console.log(document.querySelector('img'));
-
-
-
-
 let i = 0
 let name = document.querySelector('h4')
 let job = document.querySelector('#job')
@@ -46,13 +41,11 @@ let imgSrc = document.querySelector('img')
 assignValues()
 
 document.getElementById('right').addEventListener('click', () => {
-  debugger
   users.length - 1 != i ? i++ : i = 0
   assignValues()
 })
 
 document.getElementById('left').addEventListener('click', () => {
-  debugger
   i == 0 ? i = users.length - 1 : i--
   assignValues()
 })

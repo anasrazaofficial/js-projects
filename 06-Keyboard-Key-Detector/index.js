@@ -1,5 +1,4 @@
 document.querySelector('body').addEventListener('keyup', (e) => {
-  console.log(e);
   document.querySelector('div').innerHTML = `<table>
   <tr>
     <th>Key</th>
