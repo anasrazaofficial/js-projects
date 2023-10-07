@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="card">
+        <div style="display: flex;">
+            <div style="margin-right: 350px;">
+                <h3 style="display: inline;">Player 1 =</h3>&nbsp;
+                <div class="circle" style="display: inline-block;"></div>
+            </div>
+            <div>
+                <h3 style="display: inline; top: 11px;">Player 2 =</h3>&nbsp;
+                <div style="display: inline-block;">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr class="border-bottom">
+                <td class="border-right" id="one"></td>
+                <td class="border-right" id="two"></td>
+                <td id="three"></td>
+            </tr>
+            <tr class="border-bottom">
+                <td class="border-right" id="four"></td>
+                <td class="border-right" id="five"></td>
+                <td id="six"></td>
+            </tr>
+            <tr>
+                <td class="border-right" id="seven"></td>
+                <td class="border-right" id="eight"></td>
+                <td id="nine"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="win"></div>
+    <div style="text-align: center;" >
+        <button id="restart" class="d-none">Restart</button>
+        <button id="playAgain" class="d-none">Play Again</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
