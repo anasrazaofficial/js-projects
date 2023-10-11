@@ -3,10 +3,12 @@ let images = document.querySelectorAll('img')
 let flipCount = 0
 let cardArr = []
 let time = document.querySelector('input')
+let game = true
 let play = true
+
 setInterval(() => {
   if (time.value == '60') {
-    play = false
+    game = false
   } else {
     time.value++
     document.querySelector('span').innerText = `${time.value}`
@@ -15,7 +17,7 @@ setInterval(() => {
 
 cards.forEach((card, i) => {
   card.addEventListener('click', (event) => {
-    if (play) {
+    if (game) {
       const el = event.target
       el.style.display = 'none'
       el.nextElementSibling.style.display = 'block'
@@ -35,15 +37,29 @@ cards.forEach((card, i) => {
           hideEmojis()
         }, 200)
       }
-    }else{
+    } else {
       alert("Time's up! Reload to play again")
+    }
+    for (let index = 0; index < images.length; index++) {
+      if (images[index].id != 'done') {
+        play = true
+        break
+      } else {
+        play = false
+      }
+    }
+    if (!play) {
+      setTimeout(() => {
+        alert("Congratulations! You've won the game")
+        window.location.reload()
+      }, 400)
     }
   })
 })
 
 images.forEach((image, i) => {
   image.addEventListener('click', (event) => {
-    if (play) {
+    if (game) {
       const el = event.target
       if (el.id != 'done') {
         el.style.display = 'none'
@@ -51,7 +67,7 @@ images.forEach((image, i) => {
         flipCount--
         cardArr.splice(i, 1)
       }
-    }else{
+    } else {
       alert("Time's up! Reload to play again")
     }
   })
