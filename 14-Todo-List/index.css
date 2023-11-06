@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-size: 20px;
+    width: 40%;
+    padding: 16px 8px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border: 0;
+    outline: 0;
+}
+
+.addBtn {
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    padding: 16px 12px;
+    border-left: 1px solid gray;
+    background-color: #fff;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.addBtn:hover {
+    background-color: rgb(216, 211, 211);
+    cursor: pointer;
+}
+
+.todos {
+    margin-top: 60px;
+    margin-top: 60px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.todos div {
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+}
+
+label {
+    color: black;
+    text-wrap: nowrap;
+}
+
+.actionBtns {
+    margin-left: 300px;
+}
+
+.actionBtns button {
+    margin: 0 7px;
+    border: 0;
+    color: white;
+    padding: 10px 16px;
+}
+
+.actionBtns button:first-child {
+    background-color: blue;
+}
+
+.actionBtns button:last-child {
+    background-color: red;
+}
+
+.actionBtns button:hover {
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray !important;
+}
+
+button:disabled:hover {
+    filter: brightness(1);
+    cursor: default;
+}
