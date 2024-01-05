@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('../assets/bg.jpeg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    padding: 0 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+tr:first-child {
+    background: #393939;
+}
