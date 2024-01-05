@@ -6,6 +6,8 @@ let time = document.querySelector('input')
 let game = true
 let play = true
 
+
+
 setInterval(() => {
   if (time.value == '60') {
     game = false

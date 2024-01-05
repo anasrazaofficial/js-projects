@@ -1,16 +1,16 @@
 document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault()
 
-  let height = document.getElementById('height').value
-  let weight = document.getElementById('weight').value
+  let height = document.getElementById('height')
+  let weight = document.getElementById('weight')
   let bmi;
 
-  if (height == '' || height <= 0 || isNaN(height)) {
+  if (height.value == '' || height.value <= 0 || isNaN(height.value)) {
     alert('Please enter valid height')
-  } else if (weight == '' || weight <= 0 || isNaN(weight)) {
+  } else if (weight.value == '' || weight.value <= 0 || isNaN(weight.value)) {
     alert('Please enter valid weight')
   } else {
-    bmi = (weight / ((height * height) / 10000)).toFixed(2)
+    bmi = (weight.value / ((height.value * height.value) / 10000)).toFixed(2)
     let status;
     if (bmi < 18.6) {
       status = `According to your BMI ${bmi}, you are under weight`
@@ -21,6 +21,8 @@ document.querySelector('form').addEventListener('submit', (e) => {
     }
     document.getElementById('result').innerHTML = `<span>The Body mass index (BMI) of given information is ${bmi}</span><br>
     <span>${status}</span>`
+    height.value = ''
+    weight.value = ''
   }
 
 })

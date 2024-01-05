@@ -1,4 +1,9 @@
-setInterval(() => {
+let clock = document.getElementById('clock')
+
+function getDate() {
   let date = new Date()
-  document.getElementById('clock').innerHTML = date.toLocaleTimeString()
-}, 1000)
+  clock.innerHTML = date.toLocaleTimeString()
+}
+
+getDate()
+setInterval(() => getDate(), 1000)

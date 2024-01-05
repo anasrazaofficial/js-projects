@@ -12,7 +12,7 @@ addTodo.addEventListener('click', () => {
         todos.innerHTML += `<div>
         <div>
             <input type='checkbox' id='todo${id}'>
-            <label>${todoMsg}</label>
+            <label for='todo${id}'>${todoMsg}</label>
         </div>
         <div class="actionBtns">
             <button onclick='editTodo(todo${id})' id='editBtn'>Edit</button>

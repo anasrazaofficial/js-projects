@@ -1,23 +1,31 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(41, 71, 104);
-    /* color: #fff; */
+    background-image: url('../assets/bg.jpeg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
 }
 
 .centerDiv {
     position: absolute;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
+    top: 40%;
+    transform: translate(-50%, -40%);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.centerDiv h5 {
+.centerDiv div {
     background-color: rgb(155, 42, 32);
     width: 135px;
     height: 50px;
-    border-radius: 15%;
+    border-radius: 8px;
     text-align: center;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
