@@ -38,6 +38,24 @@ section {
     margin-bottom: 20px;
 }
 
+@media (max-width:640px) {
+    section {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:641px) {
+    section {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 section div {
     box-shadow: 0 0px 4px #0000003d;
     border-radius: 5px;
