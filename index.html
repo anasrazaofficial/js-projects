@@ -18,62 +18,105 @@
             and use. Each project is designed to showcase different concepts and features of JavaScript.</p>
 
         <section>
-            <div> <a href="./01-Color-Theme-Switcher/index.html">
+            
+            <div>
+                <a href="./01-Color-Theme-Switcher/index.html">
                     <h4> Color Theme Switcher</h4>
                     <b>Description:</b> A project that allows you to switch between different color themes dynamically.
-                </a> </div>
-            <div> <a href="./02-BMI-Calculator/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./02-BMI-Calculator/index.html">
                     <h4> BMI Calculator</h4>
                     <b>Description:</b> Calculate your Body Mass Index (BMI) with this simple BMI calculator.
-                </a> </div>
-            <div> <a href="./03-Digital-Clock/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./03-Digital-Clock/index.html">
                     <h4> Digital Clock</h4>
                     <b>Description:</b> A digital clock that displays the current time.
-                </a> </div>
-            <div> <a href="./04-Guess-The-Number/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./04-Guess-The-Number/index.html">
                     <h4> Guess The Number</h4>
                     <b>Description:</b> Guess the correct number within a given range.
-                </a> </div>
-            <div> <a href="./05-Background-Color-Loop/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./05-Background-Color-Loop/index.html">
                     <h4> Background Color Loop</h4>
                     <b>Description:</b> Change the background color of the page in a loop.
-                </a> </div>
-            <div>
-                <h4> <a href="./06-Keyboard-Key-Detector/index.html">Keyboard Key Detector</a> </h4>
-                <b>Description:</b> Detect and display the keys pressed on the keyboard.
+                </a>
             </div>
-            <div> <a href="./07-Counter/index.html">
+
+            <div>
+                <a href="./06-Keyboard-Key-Detector/index.html">
+                    <h4>Keyboard Key Detector </h4>
+                    <b>Description:</b> Detect and display the keys pressed on the keyboard.
+                </a>
+            </div>
+
+            <div>
+                <a href="./07-Counter/index.html">
                     <h4> Counter</h4>
                     <b>Description:</b> A simple counter that can increment, decrement, and reset.
-                </a> </div>
-            <div> <a href="./08-reviews/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./08-reviews/index.html">
                     <h4> Reviews</h4>
                     <b>Description:</b> Display and navigate through user reviews.
-                </a> </div>
-            <div> <a href="./09-Calculator/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./09-Calculator/index.html">
                     <h4> Calculator</h4>
                     <b>Description:</b> A basic calculator for performing arithmetic operations.
-                </a> </div>
-            <div> <a href="./10-Tic-Tac-Toe/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./10-Tic-Tac-Toe/index.html">
                     <h4> Tic Tac Toe</h4>
                     <b>Description:</b> Classic Tic Tac Toe game for two players.
-                </a> </div>
-            <div> <a href="./11-Flip-The-Card/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./11-Flip-The-Card/index.html">
                     <h4> Flip The Card</h4>
                     <b>Description:</b> A card flipping game.
-                </a> </div>
-            <div> <a href="./12-Truth-Or-Dare/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./12-Truth-Or-Dare/index.html">
                     <h4> Truth or Dare</h4>
                     <b>Description:</b> Play the classic Truth or Dare game.
-                </a> </div>
-            <div> <a href="./13-drum-kit/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./13-drum-kit/index.html">
                     <h4> Drum Kit</h4>
                     <b>Description:</b> An interactive drum kit where you can play different drum sounds.
-                </a> </div>
-            <div> <a href="./14-Todo-List/index.html">
+                </a>
+            </div>
+
+            <div>
+                <a href="./14-Todo-List/index.html">
                     <h4> Todo List</h4>
                     <b>Description:</b> Keep track of your tasks with this simple todo list.
-                </a> </div>
+                </a>
+            </div>
+
         </section>
 
         <strong>Feel free to explore each project individually and have fun coding! Happy Coding!</strong>
@@ -85,7 +128,10 @@
     </main>
 
     <script>
-        document.querySelector('section').childNodes.forEach(div => div.addEventListener('click', () => window.location.href = div.childNodes[1].href))
+        document.querySelector('section').childNodes.forEach(div => div.addEventListener('click', () => {
+            debugger
+            window.location.href = div.childNodes[1].href
+        }))
     </script>
 </body>
 
