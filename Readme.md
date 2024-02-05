@@ -47,4 +47,5 @@ Welcome to my awesome JavaScript project! This repository contains various JavaS
 <b>Description:</b> Keep track of your tasks with this simple todo list.
 
 <hr>
-Preview = https://js-projects-anasrazaofficials-projects.vercel.app/
+
+Preview = [Click here](https://js-simple-projects.vercel.app/)
