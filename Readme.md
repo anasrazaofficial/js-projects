@@ -48,4 +48,4 @@ Welcome to my awesome JavaScript project! This repository contains various JavaS
 
 <hr>
 
-Preview = [Click here](https://js-simple-projects.vercel.app/)
+Preview = [Click here](https://jssimpleprojects.vercel.app/)
