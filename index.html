@@ -11,14 +11,14 @@
 <body>
     <h1 style="padding: 16px 0;">JavaScript Simple Project</h1>
 
-    <main style="padding: 0 50px;">
-        <p>
+    <main style="padding: 40px 50px 0;">
+        <p style="margin: 0;">
             Welcome to my awesome JavaScript project! This repository contains various JavaScript projects that you can
             explore
             and use. Each project is designed to showcase different concepts and features of JavaScript.</p>
 
         <section>
-            
+
             <div>
                 <a href="./01-Color-Theme-Switcher/index.html">
                     <h4> Color Theme Switcher</h4>
@@ -123,15 +123,17 @@
 
         <div class="flex">
             <span>For source code, you can visit my</span>
-            <a href="https://github.com/anasrazaofficial/js-projects.git"><img src="./github.svg" alt="Github icon"></a>
+            <a href="https://github.com/anasrazaofficial/js-projects.git"><img src="./assets/github.svg"
+                    alt="Github icon"></a>
         </div>
     </main>
 
     <script>
-        document.querySelector('section').childNodes.forEach(div => div.addEventListener('click', () => {
-            debugger
-            window.location.href = div.childNodes[1].href
-        }))
+        document.querySelector('section').childNodes.forEach(div =>
+            div.addEventListener('click', () =>
+                window.location.href = div.childNodes[1].href
+            )
+        )
     </script>
 </body>
 
